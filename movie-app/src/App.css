@@ -1,0 +1,89 @@
+ /* General Body Styling */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+ body {
+   background-color: #2c2c2c;
+   color: #fff;
+   font-family: Montserrat;
+ }
+
+ /* Header Section */
+ .header {
+   background: #1c1c1c;
+   height: 300px;
+   /* Increased height */
+   position: relative;
+   display: flex;
+   flex-direction: column;
+ }
+
+ .logo {
+   font-weight: bold;
+   font-size: 24px;
+   color: #e50914;
+   position: absolute;
+   top: 20px;
+   left: 20px;
+ }
+
+ .add-movie-btn {
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   background-color: #e50914;
+   border: none;
+   color: #fff;
+   padding: 8px 15px;
+   border-radius: 4px;
+   cursor: pointer;
+ }
+
+ /* Search Section */
+ .search-bar {
+   margin: auto;
+   /* centers vertically & horizontally inside header */
+   width: 100%;
+   max-width: 600px;
+ }
+
+ .search-bar h2 {
+   color: #fff;
+   font-size: 32px;
+   letter-spacing: 1px;
+ }
+
+ .search-bar input {
+   border-radius: 0;
+ }
+
+ .search-bar button {
+   background-color: #e50914;
+   border-radius: 0;
+   border: none;
+   color: #fff;
+ }
+
+ /* Filters and Sorting */
+ .filter-bar {
+   background: #1c1c1c;
+   padding: 10px 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 20px;
+ }
+
+ .filter-bar .filters span {
+   margin-right: 15px;
+   cursor: pointer;
+ }
+
+ .filter-bar .filters span.active {
+   border-bottom: 2px solid #e50914;
+   padding-bottom: 2px;
+ }
+
+ .sort select {
+   cursor: pointer;
+ }
+
