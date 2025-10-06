@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SearchForm from "./components/SearchForm/SearchForm";
 import "./App.css";
-import GenreSelect from "./components/SearchForm/GenreSelect";
+import GenreSelect from "./components/GenreSelect/GenreSelect";
 
 function App() {
 
