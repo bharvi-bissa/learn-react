@@ -1,5 +1,5 @@
  /* General Body Styling */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
  body {
    background-color: #2c2c2c;
@@ -87,3 +87,136 @@
    cursor: pointer;
  }
 
+ /* Movie Cards */
+ .movie-card {
+   background: #1c1c1c;
+   border-radius: 8px;
+   overflow: hidden;
+   margin-bottom: 20px;
+   transition: transform 0.2s;
+   position: relative;
+ }
+
+ .movie-menu {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+ }
+
+
+ .movie-card:hover {
+   transform: scale(1.05);
+ }
+
+ .movie-card img {
+   width: 100%;
+   height: auto;
+ }
+
+ .movie-info {
+   padding: 15px;
+ }
+
+ .movie-info h6 {
+   margin: 0;
+   font-size: 16px;
+   font-weight: bold;
+ }
+
+ .movie-info p {
+   margin: 0;
+   font-size: 14px;
+   color: #aaa;
+ }
+
+ .movie-year {
+   float: right;
+   border: 1px solid #aaa;
+   padding: 2px 6px;
+   border-radius: 4px;
+   font-size: 12px;
+ }
+
+ /* movie detail */
+ .movie-details-container {
+   background-color: #232323;
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 60px 20px;
+ }
+
+ .movie-details {
+   display: flex;
+   align-items: flex-start;
+   gap: 50px;
+   max-width: 1000px;
+   width: 100%;
+ }
+
+ .movie-poster {
+   flex-shrink: 0;
+ }
+
+ .poster-img {
+   width: 300px;
+   border-radius: 8px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+ }
+
+ .movie-info {
+   flex: 1;
+ }
+
+ .movie-title {
+   font-size: 36px;
+   font-weight: 700;
+   color: #fff;
+   letter-spacing: 1px;
+ }
+
+ .movie-rating {
+   border: 1px solid #fff;
+   width: 45px;
+   height: 45px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: 600;
+   font-size: 14px;
+   border-radius: 50%;
+   color: #fff;
+ }
+
+ .movie-genres {
+   color: #bbb;
+   font-size: 16px;
+   margin-bottom: 10px;
+ }
+
+ .movie-meta {
+   display: flex;
+   align-items: center;
+   font-size: 18px;
+ }
+
+ .movie-year-movie-info {
+   color: #e50914;
+   font-weight: lighter;
+   font-size: 20px;
+ }
+
+ .movie-duration {
+   color: #e50914;
+   font-weight: lighter;
+   font-size: 20px;
+   margin-left: 40px;
+ }
+
+ .movie-description {
+   color: #ccc;
+   font-size: 15px;
+   line-height: 1.6;
+   margin-top: 10px;
+ }

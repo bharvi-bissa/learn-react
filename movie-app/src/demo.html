@@ -104,7 +104,15 @@
             overflow: hidden;
             margin-bottom: 20px;
             transition: transform 0.2s;
+            position: relative;
         }
+
+        .movie-menu {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
 
         .movie-card:hover {
             transform: scale(1.05);
@@ -188,6 +196,16 @@
             <!-- Movie Card -->
             <div class="col-md-4">
                 <div class="movie-card">
+                    <div class="dropdown movie-menu">
+                        <button class="btn btn-dark btn-sm" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            &#8942;
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                            <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
+                        </ul>
+                    </div>
                     <img src="https://picsum.photos/300/450?random=1" alt="Movie Poster">
                     <div class="movie-info">
                         <h6>Pulp Fiction <span class="movie-year">1994</span></h6>
@@ -196,24 +214,45 @@
                 </div>
             </div>
 
+
             <!-- Movie Card -->
             <div class="col-md-4">
                 <div class="movie-card">
+                    <div class="dropdown movie-menu">
+                        <button class="btn btn-dark btn-sm" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            &#8942;
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                            <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
+                        </ul>
+                    </div>
                     <img src="https://picsum.photos/300/450?random=2" alt="Movie Poster">
                     <div class="movie-info">
-                        <h6>Bohemian Rhapsody <span class="movie-year">2018</span></h6>
-                        <p>Drama, Biography, Music</p>
+                        <h6>Pulp Fiction <span class="movie-year">1994</span></h6>
+                        <p>Action & Adventure</p>
                     </div>
                 </div>
             </div>
 
             <!-- Movie Card -->
-            <div class="col-md-4">
+             <div class="col-md-4">
                 <div class="movie-card">
+                    <div class="dropdown movie-menu">
+                        <button class="btn btn-dark btn-sm" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            &#8942;
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                            <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
+                        </ul>
+                    </div>
                     <img src="https://picsum.photos/300/450?random=3" alt="Movie Poster">
                     <div class="movie-info">
-                        <h6>Kill Bill Vol. 2 <span class="movie-year">2004</span></h6>
-                        <p>Oscar winning Movie</p>
+                        <h6>Pulp Fiction <span class="movie-year">1994</span></h6>
+                        <p>Action & Adventure</p>
                     </div>
                 </div>
             </div>
