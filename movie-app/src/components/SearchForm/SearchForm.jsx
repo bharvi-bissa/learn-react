@@ -34,6 +34,7 @@ function SearchForm({ initialQuery = "", onSearch }) {
             <h2 className="mb-4 fw-bold text-uppercase">Find Your Movie</h2>
             <div className="input-group">
                 <input
+                    data-cy = "search-input"
                     type="text"
                     className="form-control"
                     placeholder="What do you want to watch?"
