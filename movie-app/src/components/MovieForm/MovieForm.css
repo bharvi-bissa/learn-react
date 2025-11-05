@@ -1,0 +1,13 @@
+.movie-form {
+  background-color: transparent;
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: none;
+  border-color: #f65261;
+}
+
+textarea {
+  resize: none;
+}
