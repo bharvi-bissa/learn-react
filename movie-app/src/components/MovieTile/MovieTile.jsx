@@ -1,10 +1,24 @@
-function MovieTile({ movie, handleMovieClick }) {
+function MovieTile({ movie, handleMovieClick, handleEditMovieClick, handleDeleteMovieClick  }) {
     const { title, imageUrl, year, genres } = movie;
 
     const handleMovieTileClick = () => {
         console.log("movie title - " + movie.title);
         if (handleMovieClick) {
             handleMovieClick(movie)
+        }
+    }
+
+    const handleEditMovieClickOnTile = (e) => {
+        e.stopPropagation();
+        if(handleEditMovieClick){
+            handleEditMovieClick();
+        }
+    }
+
+    const handleDeleteMovieClickOnTile = (e) => {
+        e.stopPropagation();
+        if(handleDeleteMovieClick){
+            handleDeleteMovieClick(movie);
         }
     }
 
@@ -17,8 +31,8 @@ function MovieTile({ movie, handleMovieClick }) {
                         &#8942;
                     </button>
                     <ul className="dropdown-menu">
-                        <li><a className="dropdown-item" href="#">Edit</a></li>
-                        <li><a className="dropdown-item text-danger" href="#">Delete</a></li>
+                        <li><a className="dropdown-item" href="#" onClick={handleEditMovieClickOnTile}>Edit</a></li>
+                        <li><a className="dropdown-item text-danger" href="#" onClick={handleDeleteMovieClickOnTile}>Delete</a></li>
                     </ul>
                 </div>
                 <img src={imageUrl} alt="Movie Poster" />
