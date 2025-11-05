@@ -3,14 +3,7 @@ import ReactDOM from "react-dom";
 import {FocusTrap} from "focus-trap-react";
 import "./Dialog.css";
 
-/**
- * Dialog component rendered via React Portal.
- * - Uses `ReactDOM.createPortal` to mount outside the normal DOM tree (in `document.body`).
- * - Uses FocusTrap for accessibility (keeps keyboard focus within the dialog).
- * - Accepts `title`, `children`, and `onClose` props.
- */
 const Dialog = ({ title, children, onClose }) => {
-  // Create portal root dynamically if not present
   const portalRoot =
     document.getElementById("dialog-root") ||
     (() => {
